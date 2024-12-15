@@ -1,6 +1,13 @@
 import torch
 from torch.utils.data import DataLoader, TensorDataset, Dataset
 import torch.nn.functional as F
+if is_bitsandbytes_available():  
+    import bitsandbytes as bnb  
+    import torch  
+    import torch.nn as nn
+else:
+    import torch  
+    import torch.nn as nn
 
 class LoaderData:
     def __init__(self, dataset, batch=32, seq=40, vocab=None, tokenizer=None, num_classes=10, j="train"):
