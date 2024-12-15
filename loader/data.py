@@ -1,4 +1,5 @@
-import math
+from torch.utils.data import DataLoader, TensorDataset, Dataset
+import torch.nn.functional as F
 
 class LoaderData:
     def __init__(self, dataset, batch=32, seq=40, vocab=None, tokenizer=None, num_classes=10, j="train"):
