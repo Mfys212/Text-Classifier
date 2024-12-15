@@ -1,6 +1,6 @@
 from module import *
 
-class TransformerEncoder(nn.Module):
+class BERT(nn.Module):
     def __init__(self, embed_dim=512, num_heads=8, sequence_length=64, 
                  vocab_size=10000, n_layers=2, bert=True, num_cls=10):
         super().__init__()
