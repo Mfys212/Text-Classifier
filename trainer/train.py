@@ -19,8 +19,8 @@ from torch.utils.data import Dataset, DataLoader
 import torch.nn.functional as F
 import math
 
-from model import TransformerEncoder, BERT, GRUModel, LSTMModel
-from loader import LoaderData
+from TextClassifier.model import TransformerEncoder, BERT, GRUModel, LSTMModel
+from TextClassifier.loader import LoaderData
 
 class CreateModel(nn.Module):
     def __init__(self,
