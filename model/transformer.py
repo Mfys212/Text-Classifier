@@ -1,4 +1,4 @@
-from module import *
+from .module import *
 
 class TransformerEncoder(nn.Module):
     def __init__(self, embed_dim=512, num_heads=8, sequence_length=64, 
