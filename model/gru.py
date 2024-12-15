@@ -1,3 +1,6 @@
+import torch
+import torch.nn as nn
+
 class GRUModel(nn.Module):
     def __init__(self, vocab_size, embedding_dim, output_dim, n_layers, dropout=0.1):
         super().__init__()
